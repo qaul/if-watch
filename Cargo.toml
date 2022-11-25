@@ -14,6 +14,7 @@ crate-type = ["cdylib", "lib"]
 [features]
 tokio = ["dep:tokio", "rtnetlink/tokio_socket"]
 smol = ["dep:smol", "rtnetlink/smol_socket"]
+default = ["smol"]
 
 [dependencies]
 fnv = "1.0.7"
